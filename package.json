@@ -103,6 +103,7 @@
     "jsonwebtoken": "^9.0.0",
     "jwa": "^1.4.1",
     "jws": "^3.2.2",
+    "jwt-decode": "^3.1.2",
     "kareem": "^2.3.2",
     "lodash": "^4.17.21",
     "lodash.sortby": "^4.7.0",
