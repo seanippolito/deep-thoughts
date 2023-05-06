@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ThoughtList = ({ thoughts, title }) => {
-    console.log(thoughts);
-    console.log(title);
     if (!thoughts || !thoughts.length) {
         return <h3>No Thoughts Yet</h3>;
     }
@@ -20,9 +18,9 @@ const ThoughtList = ({ thoughts, title }) => {
                               style={{ fontWeight: 700 }}
                               className="text-light"
                             >
-                                {thought.username}
+                                {thought.username} {' '}
                                 thought on {thought.createdAt}
-                            </Link>{' '}
+                            </Link>
                         </p>
                         <div className="card-body">
                             <Link to={`/thought/${thought._id}`}>
